@@ -7,7 +7,7 @@ class Recipe < ActiveRecord::Base
     timestamps    
   end
 
-  belongs_to :user
+  belongs_to :user, :creator => true
 
 
   # --- Permissions --- #

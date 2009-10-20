@@ -1,0 +1,14 @@
+--- 
+test_user: 
+  salt: 388f70cf2f2d0ee8aeb5f682dfe8bd13c8af2dc7
+  name: Test User
+  key_timestamp: 
+  created_at: 2009-10-20 20:05:25
+  crypted_password: d567510c1cf4c67f68764b4e6bee500be224f07c
+  remember_token_expires_at: 
+  updated_at: 2009-10-20 20:05:25
+  id: "1"
+  administrator: t
+  remember_token: 
+  email_address: test@example.com
+  state: active
