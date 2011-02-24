@@ -1,0 +1,40 @@
+diff --git a/Gemfile b/Gemfile
+index da1c374..8b4c8a8 100644
+--- a/Gemfile
++++ b/Gemfile
+@@ -1,19 +1,14 @@
+ source "http://rubygems.org"
+ 
+ # this section of the Gemfile is patched by the rails patches
+-
+-# for rails 2.2.2 we'll lock down some older versions just to widen our test
+-gem "rails", "= 2.2.2"
+-gem "mongrel", "= 1.1.5"      # to prevent this bug:  http://www.ruby-forum.com/topic/206225
++gem "rails", "= 2.3.4"
+ group :test do
+   gem "webrat", "= 0.7.0"
+-  # rails 2.2.2 doesn't require rack, but webrat does
+-  gem "rack", "= 1.0.1"
+ end
+ gem "will_paginate", "= 2.3.12"
+-sqlite_specs=["sqlite3-ruby", "= 1.2.5", :require => "sqlite3"]
+-mysql_specs=["mysql", "= 2.8.1"]
++sqlite_specs=["activerecord-jdbcsqlite3-adapter", "~> 1.1"]
++mysql_specs=["activerecord-jdbcmysql-adapter", "~> 1.1"]
+ 
+ 
+ 
+ 
+diff --git a/config/environment.rb b/config/environment.rb
+index 8eca6a3..4925820 100644
+--- a/config/environment.rb
++++ b/config/environment.rb
+@@ -5,7 +5,7 @@
+ # ENV['RAILS_ENV'] ||= 'production'
+ 
+ # Specifies gem version of Rails to use when vendor/rails is not present
+-RAILS_GEM_VERSION = '2.2.2' unless defined? RAILS_GEM_VERSION
++RAILS_GEM_VERSION = '2.3.4' unless defined? RAILS_GEM_VERSION
+ 
+ # Bootstrap the Rails environment, frameworks, and default configuration
+ require File.join(File.dirname(__FILE__), 'boot')
