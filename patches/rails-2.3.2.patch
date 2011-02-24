@@ -17,7 +17,7 @@ index da1c374..60d808c 100644
 -  gem "rack", "= 1.0.1"
  end
  gem "will_paginate", "= 2.3.12"
- sqlite_specs=["sqlite3-ruby", "= 1.2.5", :require => "sqlite3"]
+ sqlite_specs=["sqlite3-ruby", "= 1.2.5", {:require => "sqlite3"}]
  mysql_specs=["mysql", "= 2.8.1"]
 diff --git a/config/environment.rb b/config/environment.rb
 index 8eca6a3..6111475 100644

@@ -19,7 +19,6 @@ for combo in ${combos[*]} ; do
     bundle install --local
     rake hobo:generate_taglibs
     rake test:integration
-    source acceptance_test.sh
     patch_down
 done
 

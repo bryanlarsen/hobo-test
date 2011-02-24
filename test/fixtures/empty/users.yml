@@ -8,7 +8,7 @@ test_user:
   remember_token_expires_at: 
   updated_at: 2009-10-20 20:05:25
   id: "1"
-  administrator: t
+  administrator: true
   remember_token: 
   email_address: test@example.com
   state: active

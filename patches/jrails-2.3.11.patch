@@ -18,7 +18,7 @@ index da1c374..a243865 100644
 +  gem "webrat"
  end
 -gem "will_paginate", "= 2.3.12"
--sqlite_specs=["sqlite3-ruby", "= 1.2.5", :require => "sqlite3"]
+-sqlite_specs=["sqlite3-ruby", "= 1.2.5", {:require => "sqlite3"}]
 -mysql_specs=["mysql", "= 2.8.1"]
 +gem "will_paginate", "~> 2.3"
 +sqlite_specs=["activerecord-jdbcsqlite3-adapter", "~> 1.1"]
