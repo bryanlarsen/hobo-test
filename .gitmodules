@@ -1,3 +1,0 @@
-[submodule "vendor/plugins/nested_scenarios"]
-	path = vendor/plugins/nested_scenarios
-	url = git://github.com/josevalim/nested_scenarios.git

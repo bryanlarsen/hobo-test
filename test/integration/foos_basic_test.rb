@@ -3,7 +3,8 @@ require 'integration/integration_test_helper'
 
 class FoosBasicTestTest < ActionController::IntegrationTest
   include IntegrationTestHelper
-  scenario "empty"
+  self.fixture_path += "empty/"
+  fixtures :all
   
   test "recipes" do
     login_administrator
